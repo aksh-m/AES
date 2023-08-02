@@ -1,7 +1,7 @@
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad, unpad
 import fingerprintnormalization
-import finger123
+import fingerprinthash
 
 def encrypt_file(input_file, output_file, key):
     cipher = AES.new(key, AES.MODE_CBC)
